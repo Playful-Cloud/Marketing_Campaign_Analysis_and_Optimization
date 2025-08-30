@@ -105,6 +105,11 @@ marketing\_campaign\_analysis/
 
 
 \## 3. Next Steps
+\- \[x] set up gitinore
+
+\- \[ ] set up Branch: main and dev
+
+\- \[ ] set up Project management: Kanban and Tasks
 
 \- \[ ] Load raw data into `/data`  
 
