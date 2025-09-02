@@ -54,7 +54,6 @@ Full raw datasets are stored separately:
 
 ---
 
-```text
 marketing_campaign_analysis/
 ├── .gitignore                         # Files to exclude from version control
 ├── README.md                          # Project documentation (this file)
