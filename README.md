@@ -49,29 +49,36 @@ Full raw datasets are stored separately:
 
 ## Documentation
 
-- **Data Dictionary** → Detailed overview of dataset fields, types, and descriptions  
-- **Data Documentation** → Project-level documentation covering data sources, assumptions, and workflow  
+- **Data Dictionary**: Detailed overview of dataset fields, types, and descriptions  
+- **Data Documentation**: Project-level documentation covering data sources, assumptions, and workflow  
 
 ---
 
-marketing_campaign_analysis/
-├── .gitignore                         # Files to exclude from version control
-├── README.md                          # Project documentation (this file)
-├── data/                              # Raw and cleaned datasets
+Repository Structure
+
+<pre>'''marketing_campaign_analysis/
+│
+├── data/
 │   └── marketing_campaigns_aug2024_jul2025.csv
-├── notebooks/                         # Jupyter notebooks
+│
+├── notebooks/
 │   ├── 01_data_quality.ipynb
 │   ├── 02_feature_engineering.ipynb
 │   ├── 03_EDA.ipynb
 │   └── 04_visualizations.ipynb
-├── reports/                           # Reports
+│
+├── reports/
 │   ├── executive_summary.md
 │   └── final_report.pdf
-├── scripts/                           # Python scripts
+│
+├── scripts/
 │   ├── data_cleaning.py
 │   ├── feature_engineering.py
 │   └── eda.py
-└── viz/                               # Plots, charts, visual assets
+│
+├── .gitignore
+└── README.md'''</pre>
+
 
 
 
