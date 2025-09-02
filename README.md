@@ -54,47 +54,25 @@ Full raw datasets are stored separately:
 
 ---
 
-## Repository Structure
-
+```text
 marketing_campaign_analysis/
-│── .gitignore # Files to exclude from version control
-│── README.md # Project documentation (this file)
-├── data/ # Raw and cleaned datasets
-│ └── marketing_campaigns_aug2024_jul2025.csv
-├── notebooks/ # Jupyter notebooks
-│ ├── 01_data_quality.ipynb
-│ ├── 02_feature_engineering.ipynb
-│ ├── 03_EDA.ipynb
-│ └── 04_visualizations.ipynb
-├── reports/ # Reports
-│ ├── executive_summary.md
-│ └── final_report.pdf
-├── scripts/ # Python scripts
-│ ├── data_cleaning.py
-│ ├── feature_engineering.py
-│ └── eda.py
-└── viz/ # Plots, charts, visual assets
-
-
-
-marketing_campaign_analysis/
-│── .gitignore # Files to exclude from version control
-│── README.md # Project documentation (this file)
-├── data/ # Raw and cleaned datasets
-│ └── marketing_campaigns_aug2024_jul2025.csv
-├── notebooks/ # Jupyter notebooks
-│ ├── 01_data_quality.ipynb
-│ ├── 02_feature_engineering.ipynb
-│ ├── 03_EDA.ipynb
-│ └── 04_visualizations.ipynb
-├── reports/ # Reports
-│ ├── executive_summary.md
-│ └── final_report.pdf
-├── scripts/ # Python scripts
-│ ├── data_cleaning.py
-│ ├── feature_engineering.py
-│ └── eda.py
-└── viz/ # Plots, charts, visual assets
+├── .gitignore                         # Files to exclude from version control
+├── README.md                          # Project documentation (this file)
+├── data/                              # Raw and cleaned datasets
+│   └── marketing_campaigns_aug2024_jul2025.csv
+├── notebooks/                         # Jupyter notebooks
+│   ├── 01_data_quality.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_EDA.ipynb
+│   └── 04_visualizations.ipynb
+├── reports/                           # Reports
+│   ├── executive_summary.md
+│   └── final_report.pdf
+├── scripts/                           # Python scripts
+│   ├── data_cleaning.py
+│   ├── feature_engineering.py
+│   └── eda.py
+└── viz/                               # Plots, charts, visual assets
 
 
 
