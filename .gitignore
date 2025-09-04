@@ -25,3 +25,7 @@ data/*.csv
 # Ignore reports in non-portable formats
 reports/*.html
 reports/*.docx
+
+# Ignore raw full datasets
+data/raw/marketing_campaign_2024.csv
+data/raw/marketing_campaign_2025.csv

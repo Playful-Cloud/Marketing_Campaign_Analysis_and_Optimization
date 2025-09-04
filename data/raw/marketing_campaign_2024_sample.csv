@@ -1,0 +1,11 @@
+campaign_id,campaign_name,start_date,end_date,channel,region,impressions,clicks,conversions,spend_usd,revenue_usd,target_audience,product_category,device,year
+2024_0362,Campaign_2024_0362,2024-06-29,2024-11-19,Social,Asia,18279,16896,9144,29477.42,35654.05,Youth,Services,Mobile,2024
+2024_0074,Campaign_2024_0074,2024-03-16,2024-08-13,Social,Africa,9146,7071,752,5701.23,14995.1,Seniors,Electronics,Mobile,2024
+2024_0375,Campaign_2024_0375,2024-04-01,2024-08-07,Display,Africa,58824,54758,19298,26919.19,40725.3,Youth,Clothing,Mobile,2024
+2024_0156,Campaign_2024_0156,2024-01-03,2024-11-01,Print,North America,63577,10623,7435,30312.78,48119.44,Youth,Software,Tablet,2024
+2024_0105,Campaign_2024_0105,2024-03-22,2024-11-22,TV,South America,52361,26825,17991,7650.57,11349.36,Seniors,Services,Mobile,2024
+2024_0395,Campaign_2024_0395,2024-04-23,2024-06-12,Email,Africa,76929,1403,591,11328.52,31202.56,Youth,Electronics,Mobile,2024
+2024_0378,Campaign_2024_0378,2024-04-30,2024-08-11,Print,Asia,76608,15194,4602,49800.16,64528.35,Adults,Food,Mobile,2024
+2024_0125,Campaign_2024_0125,2024-05-25,2024-10-11,Display,South America,56883,19134,11397,33639.47,73695.19,Youth,Clothing,Desktop,2024
+2024_0069,Campaign_2024_0069,2024-04-04,2024-10-16,Social,Europe,40178,24286,5835,34601.83,51009.13,Youth,Software,Mobile,2024
+2024_0451,Campaign_2024_0451,2024-05-06,2024-05-22,Social,South America,80760,62573,14910,42176.39,67210.14,Youth,Services,Tablet,2024
