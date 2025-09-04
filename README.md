@@ -56,11 +56,14 @@ Full raw datasets are stored separately:
 
 Repository Structure
 
-<pre>'''marketing_campaign_analysis/
+<pre>marketing_campaign_analysis/
 │
 ├── data/
-│   └── marketing_campaigns_aug2024_jul2025.csv
-│
+│   ├── raw
+│   │	└── marketing_campaign_2024_sample
+│   │	└── marketing_campaign_2025_sample
+│   └── processed
+│ 
 ├── notebooks/
 │   ├── 01_data_quality.ipynb
 │   ├── 02_feature_engineering.ipynb
@@ -77,7 +80,8 @@ Repository Structure
 │   └── eda.py
 │
 ├── .gitignore
-└── README.md'''</pre>
+│ 
+└── README.md</pre>
 
 
 
@@ -89,7 +93,7 @@ Repository Structure
 - [x] Set up `.gitignore`  
 - [x] Create branches: **main** and **dev**  
 - [x] Configure project management: **Kanban and Tasks**  
-- [ ] Load raw data into `/data/`  
+- [x] Load raw data into `/data/`  
 - [ ] Perform initial data quality checks (`notebooks/01_data_quality.ipynb`)  
 - [ ] Develop feature engineering pipeline  
 - [ ] Conduct EDA and build visualizations  
