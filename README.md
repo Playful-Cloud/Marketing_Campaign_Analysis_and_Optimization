@@ -4,20 +4,20 @@
 
 ---
 
-## Introduction
+## Introduction:
 The business has executed several campaigns across **Email, SEO, Display Ads, and Social Media** channels.  
 Each campaign had a defined budget and generated impressions, clicks, and conversions.  
 The team wants to better understand the performance dynamics to guide future ad spend.
 
 ---
 
-## Problem Statement
+## Problem Statement:
 Despite running multiple campaigns across various digital channels, it's unclear which campaigns are most effective at generating conversions relative to cost and impressions.  
 We need to assess overall campaign performance and uncover optimization opportunities.
 
 ---
 
-## Objectives
+## Objectives:
 - Identify top-performing campaigns by **CTR**, **CR**, and **cost-effectiveness**  
 - Rank campaigns using custom KPIs (e.g., **CR/Cost** or **CR × CTR**)  
 - Understand discrepancies between CTR and CR  
@@ -25,21 +25,21 @@ We need to assess overall campaign performance and uncover optimization opportun
 
 ---
 
-## Dataset Handling
+## Dataset Handling:
 
-### Raw Data
+### Raw Data:
 The full datasets used in this project are **not stored in this repository** (due to file size and confidentiality).  
 They consist of **2 years of marketing campaign data**, split into two CSV files.
 
-### Sample Data
+### Sample Data:
 For reference and reproducibility, **sample slices (a few rows)** will be included in `/data/sample/`.  
 These samples are only for structure and schema validation, **not for full analysis**.
 
-### Reproducibility
+### Reproducibility:
 All cleaning, feature engineering, and analysis steps are implemented in scripts (under `/scripts/` and `/notebooks/`).  
 Anyone with access to the full dataset can reproduce the results by running these scripts.
 
-### Data Access
+### Data Access:
 Full raw datasets are stored separately:  
 - Currently stored **locally**  
 - Will be moved to **cloud storage (Google Drive)** in the future  
@@ -47,16 +47,19 @@ Full raw datasets are stored separately:
 
 ---
 
-## Documentation
+## Documentation:
 
-- **Data Dictionary**: Detailed overview of dataset fields, types, and descriptions  
-- **Data Documentation**: Project-level documentation covering data sources, assumptions, and workflow  
+- [**Data Dictionary:**](docs/data_dictionary.md)  Detailed overview of dataset fields, types, and descriptions  
+- [**Data Documentation:**](docs/data_documentation.md) Project-level documentation covering data sources, assumptions, and workflow  
 
 ---
 
-Repository Structure
+Repository Structure:
 
 <pre>marketing_campaign_analysis/
+├── docs/
+│   ├── data_dictionary.md
+│   └── data_documentation.md
 │
 ├── data/
 │   ├── raw
@@ -88,7 +91,7 @@ Repository Structure
 
 ---
 
-## Next Steps
+## Next Steps:
 
 - [x] Set up `.gitignore`  
 - [x] Create branches: **main** and **dev**  
