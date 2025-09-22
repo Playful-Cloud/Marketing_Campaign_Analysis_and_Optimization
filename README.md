@@ -52,7 +52,7 @@ im still working on it so, im not sharing it yet
 
 
 
-## 📑 Documentation
+## Documentation
 
 - [Data Dictionary](./data_dictionary.md)  
   Detailed overview of dataset fields, types, and descriptions.
@@ -64,76 +64,39 @@ im still working on it so, im not sharing it yet
 
 \## Repository Structure
 
-1 Initial Folders
+Repository Structure:
 
-marketing\_campaign\_analysis/
-
-│── data/ # Raw and cleaned datasets
-
-│── notebooks/ # Jupyter notebooks (data quality, feature eng, EDA, viz)
-
-│── scripts/ # Python scripts (cleaning, EDA, feature eng)
-
-│── reports/ # Executive summary + final PDF report
-
-│── docs/ # Documentation (optional, extended notes)
-
-│── viz/ # Plots, charts, visual assets
-
-│── README.md # Project documentation (this file)
-
-│── .gitignore # Files to exclude from version control
-
-
-
-2 Deep Dive into Folders
-
-marketing\_campaign\_analysis/
-
-│   .gitignore
-
-│   README.md
-
+"""
+marketing_campaign_analysis/
+├── docs/
+│   ├── data_dictionary.md
+│   └── data_documentation.md
 │
-
 ├── data/
-
-│   └── marketing\_campaigns\_aug2024\_jul2025.csv
-
-│
-
+│   ├── raw
+│   │	└── marketing_campaign_2024_sample
+│   │	└── marketing_campaign_2025_sample
+│   └── processed
+│ 
 ├── notebooks/
-
-│   ├── 01\_data\_quality.ipynb
-
-│   ├── 02\_feature\_engineering.ipynb
-
-│   ├── 03\_EDA.ipynb
-
-│   └── 04\_visualizations.ipynb
-
+│   ├── 01_data_quality.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_EDA.ipynb
+│   └── 04_visualizations.ipynb
 │
-
 ├── reports/
-
-│   ├── executive\_summary.md
-
-│   └── final\_report.pdf
-
+│   ├── executive_summary.md
+│   └── final_report.pdf
 │
-
 ├── scripts/
-
-│   ├── data\_cleaning.py
-
-│   ├── feature\_engineering.py
-
+│   ├── data_cleaning.py
+│   ├── feature_engineering.py
 │   └── eda.py
-
 │
-
-└── viz/
-
+├── .gitignore
+│ 
+└── README.md
+"""
 
 
 \## 3. Next Steps
