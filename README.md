@@ -97,7 +97,7 @@ Repository Structure:
 - [x] Create branches: **main** and **dev**  
 - [x] Configure project management: **Kanban and Tasks**  
 - [x] Load raw data into `/data/`  
-- [ ] Perform initial data quality checks (`notebooks/01_data_quality.ipynb`)  
+- [x] Perform initial data quality checks (`notebooks/01_data_quality.ipynb`)  
 - [ ] Develop feature engineering pipeline  
 - [ ] Conduct EDA and build visualizations  
 - [ ] Rank campaigns using KPIs  
