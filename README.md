@@ -68,10 +68,12 @@ Repository Structure:
 │   └── processed
 │ 
 ├── notebooks/
-│   ├── 01_data_quality.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   ├── 03_EDA.ipynb
-│   └── 04_visualizations.ipynb
+│   ├── 01_data_ingestion.ipynb
+│   ├── 02_data_quality.ipynb
+│   ├── 03_data_cleaning.ipynb
+│   ├── 04_feature_engineering.ipynb
+│   ├── 05_EDA.ipynb
+│   └── 06_visualizations.ipynb
 │
 ├── reports/
 │   ├── executive_summary.md
