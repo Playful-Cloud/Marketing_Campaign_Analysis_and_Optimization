@@ -29,3 +29,9 @@ reports/*.docx
 # Ignore raw full datasets
 data/raw/marketing_campaign_2024.csv
 data/raw/marketing_campaign_2025.csv
+
+
+# Ignore .ipynb_checkpoints
+**/.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+.ipynb_checkpoints/
