@@ -144,9 +144,9 @@ marketing\_campaign\_analysis/
 
 \- \[x] set up Project management: Kanban and Tasks
 
-\- \[ ] Load raw data into `/data`  
+\- \[x] Load raw data into `/data`  
 
-\- \[ ] Perform initial data quality checks (`notebooks/01\_data\_quality.ipynb`)  
+\- \[x] Perform initial data quality checks (`notebooks/01\_data\_quality.ipynb`)  
 
 \- \[ ] Develop feature engineering pipeline  
 
