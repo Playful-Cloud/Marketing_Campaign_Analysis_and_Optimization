@@ -1,44 +1,56 @@
-\# Data Documentation
+# Data Documentation
 
+## Dataset Overview
 
+- **Source:** Internal Marketing Campaign Management System  
+- **Coverage:** 2 years (2021–2022)  
+- **Files:**  
+  - `campaign_data_2021.csv`  
+  - `campaign_data_2022.csv`  
+- **Volume:** ~500,000 rows per year  
+- **Granularity:** Daily campaign-level performance  
 
-\## Dataset Overview
+---
 
-\- \*\*Source\*\*: Company Marketing Campaign Data (internal system export).
+## Purpose
 
-\- \*\*Coverage\*\*: 2 years (2021–2022).
+This dataset is designed to:
 
-\- \*\*Files\*\*: 2 CSV files (`campaign\_data\_2021.csv`, `campaign\_data\_2022.csv`).
+- Evaluate marketing campaign effectiveness  
+- Analyze cost efficiency (CPC, ROI)  
+- Study conversion and engagement trends  
+- Support optimization of budget allocation  
 
-\- \*\*Volume\*\*: ~500k rows per year.
+---
 
-\- \*\*Granularity\*\*: Daily campaign-level performance.
+## Data Structure
 
+The dataset is structured as **tabular data** with:
 
+| Element | Description |
+|----------|--------------|
+| **Entity** | Marketing campaign |
+| **Time Dimension** | Daily records |
+| **Measures** | Impressions, clicks, conversions, spend, revenue |
+| **Derived Metrics** | CTR, CR, CPC, ROI |
 
-\## Purpose
+---
 
-The dataset is used to analyze and optimize marketing campaigns by studying:
+## Known Issues & Limitations
 
-\- Impressions, clicks, conversions
+- Some missing values in `conversions` and `revenue_usd` columns  
+- Date formats need standardization across files  
+- ROI not always directly available and must be computed  
+- Seasonal effects not explicitly encoded  
 
-\- Cost efficiency (CPC, ROI)
+---
 
-\- Trends over time
+## Usage Notes
 
+- Always clean and preprocess data before analysis  
+- Aggregate by **campaign** or **time period** (weekly, monthly) for insights  
+- Use derived KPIs (**CTR**, **CR**, **ROI**) for modeling and optimization tasks  
 
+---
 
-\## Known Limitations
-
-\- Some missing `conversion` values.
-
-\- Dates are not standardized in source (need cleaning).
-
-\- ROI not always directly available, must be computed.
-
-
-
-\## Notes
-
-Data has been split by year for parallel processing, then will be concatenated for analysis.
-
+_Last updated: {{today’s date}}_
