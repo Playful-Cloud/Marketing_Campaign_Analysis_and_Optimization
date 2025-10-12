@@ -1,55 +1,41 @@
-\# Data Dictionary
+# Data Dictionary
 
+This document describes the dataset fields used in the **Marketing Campaign Analysis and Optimization** project.
 
-
-This document describes the dataset fields used in the Marketing Campaign Analysis and Optimization project.
-
-Two CSVs represent 2 years of campaign data. Columns are consistent across both files.
-
-
+Two CSVs represent two years of campaign data. Columns are consistent across both files.
 
 ---
 
+## Campaign Dataset Fields
 
-
-
-
-| Column Name        | Type    | Description                                   | Example             |
-
-|--------------------|---------|-----------------------------------------------|---------------------|
-
-| campaign\_id        | int     | Unique ID of the campaign                     | 10234               |
-
-| date               | date    | Date of record (YYYY-MM-DD)                   | 2022-05-01          |
-
-| impressions        | int     | Number of times ad was shown                  | 12,340              |
-
-| clicks             | int     | Number of user clicks                         | 530                 |
-
-| conversions        | int     | Number of purchases/leads from campaign       | 42                  |
-
-| spend\_usd          | float   | Money spent on campaign in USD                | 1200.50             |
-
-| ctr                | float   | Click-through rate (clicks/impressions)       | 0.043               |
-
-| cr                 | float   | Conversion rate (conversions/clicks)          | 0.079               |
-
-| cpc                | float   | Cost per click (spend/clicks)                 | 2.26                |
-
-| revenue\_usd        | float   | Revenue generated from conversions            | 3400.00             |
-
-| roi                | float   | Return on investment ((revenue-spend)/spend)  | 1.83                |
-
-
+| Column Name      | Type          | Description                                                |
+|------------------|---------------|------------------------------------------------------------|
+| campaign_id      | int / string  | Unique identifier for each marketing campaign.             |
+| start_date       | date          | Date when the campaign started.                            |
+| end_date         | date          | Date when the campaign ended.                              |
+| channel          | string        | Marketing channel (e.g., Email, Social Media, Paid Ads).   |
+| impressions      | int           | Number of times the campaign was shown.                    |
+| clicks           | int           | Number of clicks received.                                 |
+| ctr              | float         | Click-through rate (Clicks ÷ Impressions).                 |
+| conversions      | int           | Number of successful conversions (e.g., purchases, signups).|
+| conversion_rate  | float         | Conversion rate (Conversions ÷ Clicks).                    |
+| cost             | float         | Total cost of the campaign.                                |
+| cpc              | float         | Cost per click (Cost ÷ Clicks).                            |
+| revenue          | float         | Revenue generated from the campaign.                       |
+| roi              | float         | Return on investment ((Revenue – Cost) ÷ Cost).            |
 
 ---
 
-\*\*Notes:\*\*
+## Notes
 
-* Dataset spans 2 years across 2 CSVs (split by year).
-* Columns ctr, conversion\_rate, cpc, and roi can be derived if not present.
-* Missing values \& outliers will be handled in the data cleaning step.
-* Additional engineered features (e.g., campaign duration, cost per conversion) will be added later.
+- Dataset spans **2 years** across **2 CSVs** (split by year).  
+- Columns `ctr`, `conversion_rate`, `cpc`, and `roi` can be derived if not present.  
+- Missing values and outliers will be handled during **data cleaning**.  
+- Additional engineered features (e.g., campaign duration, cost per conversion) will be added later.  
+
+---
+
+> **Tip:** This dictionary supports all analysis notebooks (data ingestion → visualization) by defining consistent variable naming and data types across both yearly datasets.
 
 
 

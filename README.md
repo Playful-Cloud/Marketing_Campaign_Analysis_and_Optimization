@@ -49,8 +49,8 @@ Full raw datasets are stored separately:
 
 ## Documentation:
 
-- [**Data Dictionary:**](docs/data_dictionary.md)  Detailed overview of dataset fields, types, and descriptions  
-- [**Data Documentation:**](docs/data_documentation.md) Project-level documentation covering data sources, assumptions, and workflow  
+- [**Data Dictionary**](docs/data_dictionary.md): Detailed overview of dataset fields, types, and descriptions  
+- [**Data Documentation**](docs/data_documentation.md): Project-level documentation covering data sources, assumptions, and workflow
 
 ---
 
