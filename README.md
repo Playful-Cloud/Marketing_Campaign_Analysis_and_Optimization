@@ -54,6 +54,22 @@ Full raw datasets are stored separately:
 
 ---
 
+## Repository Contents Overview
+
+| Folder | Description |
+|:--------|:-------------|
+| [**data/**](./data) | Contains all datasets used in this project. Includes **sample raw data** and **processed outputs** for analysis and modeling. |
+| [**notebooks/**](./notebooks) | Jupyter notebooks covering each stage of the project: data ingestion, cleaning, quality checks, feature engineering, and exploratory data analysis (EDA). |
+| [**scripts/**](./scripts) | Python scripts for data processing, transformations, and automation tasks derived from notebook workflows. |
+| [**docs/**](./docs) | Project documentation including data dictionary, pipeline design, and methodology notes. |
+| [**reports/**](./reports) | Generated reports and visual summaries, including key findings and analytics insights. |
+| [**config/**](./config) | Configuration files, environment setups, and project-level parameters for reproducibility. |
+| [**tests/**](./tests) | Validation scripts for data quality and functional testing of transformation logic. |
+| [**requirements.txt**](./requirements.txt) | List of dependencies and libraries required to run the project. |
+| [**README.md**](./README.md) | The main documentation file providing overview, structure, and setup instructions. |
+
+---
+
 Repository Structure:
 
 <pre>marketing_campaign_analysis/
