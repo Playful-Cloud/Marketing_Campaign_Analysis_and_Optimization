@@ -63,9 +63,7 @@ Full raw datasets are stored separately:
 | [**scripts/**](./scripts) | Python scripts for data processing, transformations, and automation tasks derived from notebook workflows. |
 | [**docs/**](./docs) | Project documentation including data dictionary, pipeline design, and methodology notes. |
 | [**reports/**](./reports) | Generated reports and visual summaries, including key findings and analytics insights. |
-| [**config/**](./config) | Configuration files, environment setups, and project-level parameters for reproducibility. |
-| [**tests/**](./tests) | Validation scripts for data quality and functional testing of transformation logic. |
-| [**requirements.txt**](./requirements.txt) | List of dependencies and libraries required to run the project. |
+| [**.gitignore**](./.gitignore) | Specifies intentionally untracked files to be ignored by Git (e.g., large data files, checkpoints, credentials). |
 | [**README.md**](./README.md) | The main documentation file providing overview, structure, and setup instructions. |
 
 ---
