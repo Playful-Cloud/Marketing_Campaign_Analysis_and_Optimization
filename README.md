@@ -20,7 +20,9 @@ We need to assess overall campaign performance and uncover optimization opportun
 ## Objectives:
 - Identify top-performing campaigns by **CTR**, **CR**, and **cost-effectiveness**  
 - Rank campaigns using custom KPIs (e.g., **CR/Cost** or **CR × CTR**)  
-- Understand discrepancies between CTR and CR  
+- Understand discrepancies between engagement (CTR) and actual conversions (CR)  
+- Build a regression-based forecasting model to estimate ROI trends.  
+- Develop automated scripts for recurring analysis and reporting.
 - Generate **actionable insights and recommendations**  
 
 ---
@@ -54,7 +56,36 @@ Full raw datasets are stored separately:
 
 ---
 
-## Repository Contents Overview
+## Project Approach
+
+| Step | Description |
+|------|--------------|
+| **1. Data Ingestion** | Load raw datasets, standardize headers, and validate schema. |
+| **2. Data Quality & Cleaning** | Handle missing values, duplicates, and inconsistent date formats. |
+| **3. Feature Engineering** | Compute derived KPIs (CTR, CR, CPC, ROI) and campaign-level aggregates. |
+| **4. Exploratory Data Analysis (EDA)** | Visualize performance distributions and relationships between KPIs. |
+| **5. Regression & Forecasting** | Build predictive models (Linear Regression) to forecast ROI, measure coefficients, and calculate MAE for performance evaluation. |
+| **6. Automation Scripts** | Develop modular Python scripts to run each pipeline stage automatically (e.g., `data_cleaning.py`, `feature_engineering.py`, `ml_forecast.py`). |
+| **7. Reporting** | Generate executive summaries, charts, and insight-ready visuals for stakeholders. |
+
+---
+
+## Tools & Technologies Used
+
+| Category | Tools / Libraries |
+|-----------|-------------------|
+| **Languages** | Python (pandas, numpy, matplotlib, seaborn, scikit-learn) |
+| **Modeling & Forecasting** | Linear Regression, MAE evaluation metrics, LR Coef |
+| **Data Storage** | CSV |
+| **Version Control** | Git, GitHub |
+| **Development Environment** | Jupyter Notebook, Git(CLI) |
+| **Automation & Workflow** | PowerShell, Python scripts |
+| **Documentation** | Markdown, GitHub, GitHub Projects |
+| **Visualization** | Matplotlib, Seaborn, Plotly |
+
+---
+
+## Repository Contents Overview:
 
 | Folder | Description |
 |:--------|:-------------|
