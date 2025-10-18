@@ -94,7 +94,7 @@ The analytical modeling component of this project focuses on building a predicti
 | Category | Tools / Libraries |
 |-----------|-------------------|
 | **Languages** | Python |
-| **Languages** | pandas, numpy, matplotlib, seaborn, scikit-learn|
+| **Libraries** | pandas, numpy, matplotlib, seaborn, scikit-learn|
 | **Modeling & Forecasting** | Linear Regression, MAE evaluation metrics, LR Coef |
 | **Data Storage** | CSV, Local |
 | **Version Control** | Git, GitHub |
