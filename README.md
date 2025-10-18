@@ -21,7 +21,8 @@ We need to assess overall campaign performance and uncover optimization opportun
 - Identify top-performing campaigns by **CTR**, **CR**, and **cost-effectiveness**  
 - Rank campaigns using custom KPIs (e.g., **CR/Cost** or **CR × CTR**)  
 - Understand discrepancies between engagement (CTR) and actual conversions (CR)  
-- Build a regression-based forecasting model to estimate ROI trends.  
+- Build and evaluate a machine learning regression model to forecast ROI and conversion performance. 
+- Compute and interpret Linear Regression coefficients and Mean Absolute Error (MAE) for model accuracy. 
 - Develop automated scripts for recurring analysis and reporting.
 - Generate **actionable insights and recommendations**  
 
@@ -56,7 +57,7 @@ Full raw datasets are stored separately:
 
 ---
 
-## Project Approach
+## Project Approach:
 
 | Step | Description |
 |------|--------------|
@@ -70,13 +71,31 @@ Full raw datasets are stored separately:
 
 ---
 
-## Tools & Technologies Used
+## Machine Learning & Forecasting:
+The analytical modeling component of this project focuses on building a predictive regression pipeline to forecast campaign performance metrics such as ROI and conversion rate.
+
+| Task | Detail |
+|------|--------|
+|Model Type |	Linear Regression (baseline predictive model) |
+|Targets |	ROI, Conversions, and CR per campaign |
+|Features|	Impressions, Clicks, Cost, CTR, Channel Type, and Campaign Duration |
+|Evaluation Metrics |	Mean Absolute Error (MAE), R² Score, Residual Analysis |
+|Interpretability |	Linear Regression Coefficients to understand variable influence |
+|Automation |	Implemented as modular script ml_forecast.py under /scripts/ |
+|Output |	Predicted ROI trends and channel-level performance forecasts |
+
+
+-The model provides a quantifiable, interpretable understanding of which features most impact campaign performance, enabling marketing teams to optimize spend allocation proactively.
+
+---
+
+## Tools & Technologies Used:
 
 | Category | Tools / Libraries |
 |-----------|-------------------|
 | **Languages** | Python (pandas, numpy, matplotlib, seaborn, scikit-learn) |
 | **Modeling & Forecasting** | Linear Regression, MAE evaluation metrics, LR Coef |
-| **Data Storage** | CSV |
+| **Data Storage** | CSV, Local |
 | **Version Control** | Git, GitHub |
 | **Development Environment** | Jupyter Notebook, Git(CLI) |
 | **Automation & Workflow** | PowerShell, Python scripts |
@@ -89,10 +108,10 @@ Full raw datasets are stored separately:
 
 | Folder | Description |
 |:--------|:-------------|
+| [**docs/**](./docs) | Project documentation including data dictionary, pipeline design, and methodology notes. |
 | [**data/**](./data) | Contains all datasets used in this project. Includes **sample raw data** and **processed outputs** for analysis and modeling. |
 | [**notebooks/**](./notebooks) | Jupyter notebooks covering each stage of the project: data ingestion, cleaning, quality checks, feature engineering, and exploratory data analysis (EDA). |
 | [**scripts/**](./scripts) | Python scripts for data processing, transformations, and automation tasks derived from notebook workflows. |
-| [**docs/**](./docs) | Project documentation including data dictionary, pipeline design, and methodology notes. |
 | [**reports/**](./reports) | Generated reports and visual summaries, including key findings and analytics insights. |
 | [**.gitignore**](./.gitignore) | Specifies intentionally untracked files to be ignored by Git (e.g., large data files, checkpoints, credentials). |
 | [**README.md**](./README.md) | The main documentation file providing overview, structure, and setup instructions. |
@@ -120,14 +139,14 @@ Repository Structure:
 │   ├── 05_EDA.ipynb
 │   └── 06_visualizations.ipynb
 │
-├── reports/
-│   ├── executive_summary.md
-│   └── final_report.pdf
-│
 ├── scripts/
 │   ├── data_cleaning.py
 │   ├── feature_engineering.py
 │   └── eda.py
+│
+├── reports/
+│   ├── executive_summary.md
+│   └── final_report.pdf
 │
 ├── .gitignore
 │ 
@@ -145,7 +164,7 @@ Repository Structure:
 - [x] Configure project management: **Kanban and Tasks**  
 - [x] Load raw data into `/data/`  
 - [x] Perform initial data quality checks (`notebooks/01_data_quality.ipynb`)  
-- [ ] Develop feature engineering pipeline  
+- [x] Develop feature engineering pipeline  
 - [ ] Conduct EDA and build visualizations  
 - [ ] Rank campaigns using KPIs  
 - [ ] Draft insights + final recommendations  
