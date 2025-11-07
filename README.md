@@ -128,9 +128,17 @@ Repository Structure:
 │
 ├── data/
 │   ├── raw
-│   │	└── marketing_campaign_2024_sample
-│   │	└── marketing_campaign_2025_sample
+│   │	├── marketing_campaign_2024_sample
+│   │	├── marketing_campaign_2025_sample
+│   │	└── marketing_campaign_jul_dec_2024
 │   └── processed
+│	├── marketing_campaign_2024_raw_labeled
+│	├── marketing_campaign_2025_raw_labeled
+│	├── marketing_campaign_all_interim
+│	├── marketing_campaign_2024_clean
+│	├── marketing_campaign_2025_clean
+│  	├── marketing_campaign_2024_2025_processed
+│ 	└── marketing_campaign_all_clean
 │ 
 ├── notebooks/
 │   ├── 01_data_ingestion.ipynb
@@ -138,13 +146,13 @@ Repository Structure:
 │   ├── 03_data_cleaning.ipynb
 │   ├── 04_feature_engineering.ipynb
 │   ├── 05_EDA.ipynb
-│   └── 06_visualizations.ipynb
+│   ├── 06_visualizations.ipynb
 │   └── 07_modeling.ipynb
 │
 ├── scripts/
 │   ├── data_cleaning.py
 │   ├── feature_engineering.py
-│   └── eda.py
+│   ├── eda.py
 │   └── ml_forecast.py
 │
 ├── reports/
