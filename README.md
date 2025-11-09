@@ -131,7 +131,7 @@ Repository Structure:
 │   │	├── marketing_campaign_2024_sample
 │   │	├── marketing_campaign_2025_sample
 │   │	└── marketing_campaign_jul_dec_2024
-│   └── processed
+│   ├── processed
 │	├── marketing_campaign_2024_raw_labeled
 │	├── marketing_campaign_2025_raw_labeled
 │	├── marketing_campaign_all_interim
@@ -170,15 +170,20 @@ Repository Structure:
 
 ## Next Steps:
 
+- [x] Set up `README.md`  
 - [x] Set up `.gitignore`  
 - [x] Create branches: **main** and **dev**  
+- [x] Create Dictionary & Data Documentation
 - [x] Configure project management: **Kanban and Tasks**  
 - [x] Load raw data into `/data/`  
-- [x] Perform initial data quality checks (`notebooks/01_data_quality.ipynb`)  
+- [x] Perform initial data quality checks (`notebooks/01_data_quality.ipynb`) 
+- [x] Perform Data Cleaning 
 - [x] Develop feature engineering pipeline  
-- [ ] Conduct EDA and build visualizations  
-- [ ] Rank campaigns using KPIs  
-- [ ] Draft insights + final recommendations  
+- [ ] Conduct EDA 
+- [ ] build visualizations (Draft insights + recommendation)
+- [ ] ML Modeling
+- [ ] Forecasting
+- [ ] Reporting (Final Report & Executive Summary)
 
 ---
 
