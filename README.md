@@ -65,12 +65,28 @@ Full raw datasets are stored separately:
 | **2. Data Quality & Cleaning** | Handle missing values, duplicates, and inconsistent date formats. |
 | **3. Feature Engineering** | Compute derived KPIs (CTR, CR, CPC, ROI) and campaign-level aggregates. |
 | **4. Exploratory Data Analysis (EDA)** | Visualize KPI distributions, identify outliers, correlations, and channel trends. |
-| **5. Regression & Forecasting** | Build predictive models (Linear Regression) to forecast ROI, measure coefficients, and calculate MAE for performance evaluation. |
-| **6. Automation Scripts** | Develop modular Python scripts to run each pipeline stage automatically (e.g., `data_cleaning.py`, `feature_engineering.py`, `ml_forecast.py`). |
-| **7. Reporting** | Generate executive summaries, charts, and insight-ready visuals for stakeholders. |
+| **5. Data Transformation & Modeling (dbt)** | the dbt layer in this project ensures that ML models operate on validated, production-grade data, improving reliability, interpretability, and long-term scalability of the analytics pipeline. |
+| **6. Regression & Forecasting** | Build predictive models (Linear Regression) to forecast ROI, measure coefficients, and calculate MAE for performance evaluation. |
+| **7. Automation Scripts** | Develop modular Python scripts to run each pipeline stage automatically (e.g., `data_cleaning.py`, `feature_engineering.py`, `ml_forecast.py`). |
+| **8. Reporting** | Generate executive summaries, charts, and insight-ready visuals for stakeholders. |
 
 ---
+## Data Transformation & Modeling (dbt)
+after features preparation and EDA in python, this project will use dbt (data build tool) as an analytics engineering layer for further Transformation and testing in order to standardize, validate, and productionize teh dataset before machine learning and reporting.
 
+Utilization of duckdb as Local analytical warehouse storing transformed datasets for this project.
+
+| Step | Description |
+|------|-------------|
+| **1. Staging Models** | Ingest cleaned CSV outputs into DuckDB and standardize column names, data types, and formats. |
+| **2. Intermediate Models** | Apply reusable business rules, deduplication logic, filtering, and intermediate aggregations. |
+| **3. Gold Models** | Produce analytics-ready datasets and KPIs (CTR, CR, CPC, ROI) for modeling and reporting. |
+| **4. Data Quality Tests** | Enforce constraints such as `not_null`, `unique`, accepted values, and schema validation. |
+| **5. Documentation & Lineage** | Automatically generate model documentation and lineage graphs via `dbt docs`. |
+| **6. ML Data Source** | Serve dbt gold tables as the single source of truth for machine learning pipelines. |
+
+
+---
 ## Machine Learning & Forecasting:
 The analytical modeling component of this project focuses on building a predictive regression pipeline to forecast campaign performance metrics such as ROI and conversion rate.
 
@@ -98,6 +114,8 @@ The analytical modeling component of this project focuses on building a predicti
 | **Modeling & Forecasting** | Linear Regression, MAE evaluation metrics, LR Coef |
 | **Data Storage** | CSV, Local |
 | **Version Control** | Git, GitHub |
+| **Transformation** | dbt |
+| **Warehouse** | duckdb |
 | **Development Environment** | Jupyter lab/Notebook, Git(CLI) |
 | **Automation & Workflow** | PowerShell, Python scripts |
 | **Documentation** | Markdown, GitHub, GitHub Projects |
@@ -126,6 +144,9 @@ Repository Structure:
 │   ├── data_dictionary.md
 │   └── data_documentation.md
 │
+├── warehouse/
+│	└── marketing_warehouse.duckdb
+│
 ├── data/
 │   ├── raw
 │   │	├── marketing_campaign_2024_sample
@@ -147,8 +168,15 @@ Repository Structure:
 │   ├── 04_feature_engineering.ipynb
 │   ├── 05_EDA.ipynb
 │   ├── 06_visualizations.ipynb
-│   └── 07_modeling.ipynb
+│   └── 07_mlmodeling.ipynb
 │
+├── dbt/
+│   ├── models
+│   │   ├── staging
+│   │   ├── intermediate
+│   │   └── gold
+│   └── dbt_project.yml
+│ 
 ├── scripts/
 │   ├── data_cleaning.py
 │   ├── feature_engineering.py
